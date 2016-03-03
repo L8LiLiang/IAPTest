@@ -15,6 +15,7 @@
 		21396E701C23F2DA007529AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21396E6E1C23F2DA007529AD /* LaunchScreen.storyboard */; };
 		21396E7B1C23F2DA007529AD /* IAPTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21396E7A1C23F2DA007529AD /* IAPTestTests.m */; };
 		21396E861C23F2DA007529AD /* IAPTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21396E851C23F2DA007529AD /* IAPTestUITests.m */; };
+		21396E941C240D85007529AD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21396E931C240D85007529AD /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		21396E811C23F2DA007529AD /* IAPTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IAPTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21396E851C23F2DA007529AD /* IAPTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IAPTestUITests.m; sourceTree = "<group>"; };
 		21396E871C23F2DA007529AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21396E931C240D85007529AD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21396E941C240D85007529AD /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		21396E541C23F2DA007529AD = {
 			isa = PBXGroup;
 			children = (
+				21396E931C240D85007529AD /* StoreKit.framework */,
 				21396E5F1C23F2DA007529AD /* IAPTest */,
 				21396E791C23F2DA007529AD /* IAPTestTests */,
 				21396E841C23F2DA007529AD /* IAPTestUITests */,
@@ -207,6 +211,7 @@
 				TargetAttributes = {
 					21396E5C1C23F2DA007529AD = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = KFE6KJ8H2X;
 					};
 					21396E751C23F2DA007529AD = {
 						CreatedOnToolsVersion = 7.2;
@@ -413,10 +418,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = IAPTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = elane.IAPTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -424,10 +433,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = IAPTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = elane.IAPTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -498,6 +511,7 @@
 				21396E8C1C23F2DA007529AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21396E8D1C23F2DA007529AD /* Build configuration list for PBXNativeTarget "IAPTestTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +520,7 @@
 				21396E8F1C23F2DA007529AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21396E901C23F2DA007529AD /* Build configuration list for PBXNativeTarget "IAPTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +529,7 @@
 				21396E921C23F2DA007529AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
